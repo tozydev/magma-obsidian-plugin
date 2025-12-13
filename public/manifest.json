@@ -2,7 +2,7 @@
   "id": "magma-obsidian-plugin",
   "name": "Magma",
   "author": "tozydev",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "minAppVersion": "1.10.6",
   "description": "🪄 An Obsidian plugin providing utility features for my personal knowledge management system.",
   "isDesktopOnly": false,
