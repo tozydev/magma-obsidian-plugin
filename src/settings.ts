@@ -3,27 +3,23 @@ import type { Plugin } from "obsidian"
 export interface SettingsData {
   lastProjectId: number
   lastAreaId: number
+  projectDirPath: string
+  areasDirPath: string
 }
 
 const DEFAULT_SETTINGS_DATA: SettingsData = {
-  lastProjectId: 0,
-  lastAreaId: 0,
+  lastProjectId: 100,
+  lastAreaId: 200,
+  projectDirPath: "1-Projects",
+  areasDirPath: "2-Areas",
 }
 
-export class Settings implements SettingsData {
+export class PluginSettings {
   private readonly plugin: Plugin
   private data: SettingsData = DEFAULT_SETTINGS_DATA
 
   constructor(plugin: Plugin) {
     this.plugin = plugin
-  }
-
-  get lastProjectId(): number {
-    return this.get().lastProjectId
-  }
-
-  get lastAreaId(): number {
-    return this.get().lastAreaId
   }
 
   get(): SettingsData {

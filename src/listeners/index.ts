@@ -1,6 +1,6 @@
 import type { MagmaPlugin } from "../plugin"
-import { idRenamer } from "./id-renamer"
+import { createProjectFileMenuListener } from "./file-menu"
 
 export const registerListeners = (plugin: MagmaPlugin) => {
-  plugin.registerEvent(idRenamer(plugin.settings, plugin.app.vault))
+  plugin.registerEvent(createProjectFileMenuListener(plugin))
 }

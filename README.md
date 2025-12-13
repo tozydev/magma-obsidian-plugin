@@ -4,12 +4,9 @@
 
 ## Features
 
-### Projects & Areas ID (PARA)
+### Projects & Areas (PARA)
 
-This feature automatically assigns IDs to Projects and Areas based on the PARA method. The IDs are generated
-incrementally, starting from 101 for Projects and 201 for Areas.
+This feature allows creating Projects and Areas folders with ID-based naming conventions for better organization.
 
-| Type     | Prefix       | Assigned ID (Example) |
-|----------|--------------|-----------------------|
-| Projects | `1xx-<name>` | `101-<name>`          |
-| Areas    | `2xx-<name>` | `201-<name>`          |
+- Command: `Create project`
+- File menu: `Create project`
